@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контактные данные</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <a class="header__link-logo" href="#">
+            <img src="img/logo.svg" alt="Logotype">
+          </a>
+          <form class="header__form">
+            <div class="header__inner">
+              <input class="header__input" type="text" name="search" placeholder="Поиск по фамилии, имени или отчеству">
+              <ul class="header__list hide"></ul>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="contacts">
+        <div class="container">
+          <h1 class="contacts__title">Клиенты</h1>
+          <div class="contacts__content">
+            <table class="table">
+              <thead class="table__head">
+                <th class="table__title table__title--up table__title--active" data-type="id">
+                  ID
+                  <svg class="table__default" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 4L7.295 3.295L4.5 6.085L4.5 0L3.5 0L3.5 6.085L0.71 3.29L0 4L4 8L8 4Z" fill="#9873FF"/>
+                  </svg>
+                </th>
+                <th class="table__title table__title--sort" data-type="text">
+                  Фамилия Имя Отчество
+                  <span class="table__default">
+                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 4L7.295 3.295L4.5 6.085L4.5 0L3.5 0L3.5 6.085L0.71 3.29L0 4L4 8L8 4Z" fill="#9873FF"/>
+                    </svg>
+                    <span class="table__title-letter">А-Я</span>
+                  </span>
+                </th>
+                <th class="table__title table__title--sort" data-type="create">
+                  Дата и время создания
+                  <svg class="table__default" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 4L7.295 3.295L4.5 6.085L4.5 0L3.5 0L3.5 6.085L0.71 3.29L0 4L4 8L8 4Z" fill="#9873FF"/>
+                  </svg>
+                </th>
+                <th class="table__title table__title--sort" data-type="update">
+                  Последние изменения
+                  <svg class="table__default" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 4L7.295 3.295L4.5 6.085L4.5 0L3.5 0L3.5 6.085L0.71 3.29L0 4L4 8L8 4Z" fill="#9873FF"/>
+                  </svg>
+                </th>
+                <th class="table__title table__title--contact">Контакты</th>
+                <th class="table__title table__title--action">Действия</th>
+              </thead>
+              <tbody class="table__body">
+
+              </tbody>
+            </table>
+          </div>
+          <button class="contacts__button">Добавить клиента</button>
+        </div>
+      </section>
+    </main>
+    <script src="js/inputmask.min.js"></script>
+  </body>
+</html>
