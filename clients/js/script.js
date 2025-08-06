@@ -446,7 +446,7 @@ function debounce(func, wait) {
 
 async function getClient() {
   try {
-    const response = await fetch('http://localhost:3000/api/clients', {
+    const response = await fetch('https://crm-clients-4bb2.onrender.com/api/clients', {
       method: 'GET'
     })
     let data = await response.json();
@@ -462,7 +462,7 @@ async function getClient() {
 
 async function deleteClient(item) {
   try {
-    const response = await fetch(`http://localhost:3000/api/clients/${item.id}`, {
+    const response = await fetch(`https://crm-clients-4bb2.onrender.com/api/clients/${item.id}`, {
       method: 'DELETE',
     });
   } catch (error) {
@@ -474,7 +474,7 @@ async function deleteClient(item) {
 
 async function searchClient(value) {
   try {
-    const response = await fetch(`http://localhost:3000/api/clients?search=${value}`, {
+    const response = await fetch(`https://crm-clients-4bb2.onrender.com/api/clients?search=${value}`, {
       method: 'GET'
     })
     const data = await response.json()
@@ -488,7 +488,7 @@ async function searchClient(value) {
 
 async function createClient(client) {
   try {
-    const response = await fetch('http://localhost:3000/api/clients', {
+    const response = await fetch('https://crm-clients-4bb2.onrender.com/api/clients', {
       method: 'POST',
       body: JSON.stringify(client)
     })
@@ -504,7 +504,7 @@ async function createClient(client) {
 
 async function editClient(client, id) {
   try {
-    const response = await fetch(`http://localhost:3000/api/clients/${id}`, {
+    const response = await fetch(`https://crm-clients-4bb2.onrender.com/api/clients/${id}`, {
       method: 'PATCH',
       body: JSON.stringify(client)
     })
