@@ -1,3 +1,5 @@
+https://sn-cval.github.io/CRM-clients/clients/
+
 # REST API для базы данных клиентов
 
 Перед запуском убедитесь, что вы установили Node.js версии 12 или выше.
